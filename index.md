@@ -1,0 +1,76 @@
+---
+title       : Texas Reservoirs
+subtitle    : 
+author      : Developing Data Products course project
+job         : January 2015
+framework   : io2012       # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+<style>
+.title-slide {background-color: #88F}
+</style>
+
+
+## Texas
+
+# Everything's bigger in Texas, including drought & flood 
+
+The state of Texas (USA) spans a large geographical area, with a severe drought in western regions coinciding with a  rainy season in the eastern marshes.    This figure illustrates recent conditions across the state, with the percentage of filled reservoir capacity: 
+
+ 
+ 
+
+<img src="recent_conditions.png">
+
+ Image credit:  Texas Water Development Board, waterdatafortexas.org
+
+
+---  .class #id
+
+
+## Embedded R code
+
+
+
+```r
+# placeholder for embedded R code   #TODO #draft
+placeholder <- seq(0,100, by=10)
+
+placeholder
+```
+
+```
+##  [1]   0  10  20  30  40  50  60  70  80  90 100
+```
+
+
+
+---  .class #id
+
+## Shiny app screenshot
+
+
+<img src="reservoir_screenshot.png">
+
+
+---  .class #id
+
+
+## Acknowlegements
+ 
+<h3> Thank you </h3>
+ 
+ <li> Texas Water Development Board (TWDB) for providing publically available data sets on waterdatafortexas.org  </li>
+ <li>  Staff and students of this class on coursera.org for informative lectures and helpful discussion forums </li>
+ <li>  R community on stackoverflow.com </li>
+ 
+ 
+ 
+ 
+
+
+
