@@ -47,33 +47,29 @@
 .title-slide {background-color: #88F}
 </style>
 
-<h2>Texas</h2>
+<h2>Everything&#39;s bigger in Texas</h2>
 
-<h1>Everything&#39;s bigger in Texas, including drought &amp; flood</h1>
+<h3>including drought &amp; flood</h3>
 
-<p>The state of Texas (USA) spans a large geographical area, with a severe drought in western regions coinciding with a  rainy season in the eastern marshes.    This figure illustrates recent conditions across the state, with the percentage of filled reservoir capacity: </p>
+<!--- 2-column example from http://rmarkdown.rstudio.com/ioslides_presentation_format.html --->
 
-<p><img src="recent_conditions.png"></p>
+<p><div class="columns-2"></p>
 
-<p>Image credit:  Texas Water Development Board, waterdatafortexas.org</p>
+<p><br></p>
 
-  </article>
-  <!-- Presenter Notes -->
-</slide>
+<p>The state of Texas (USA) spans a large geographical area, with severe drought in western regions coinciding with a rainy season in the east.</p>
 
-<slide class="class" id="id" style="background:;">
-  <hgroup>
-    <h2>Embedded R code</h2>
-  </hgroup>
-  <article data-timings="">
-    <pre><code class="r"># placeholder for embedded R code   #TODO #draft
-placeholder &lt;- seq(0,100, by=10)
+<p><br> <br> </p>
 
-placeholder
-</code></pre>
+<p>This figure shows the recent status of water reservoirs statewide as a percentage of filled capacity.</p>
 
-<pre><code>##  [1]   0  10  20  30  40  50  60  70  80  90 100
-</code></pre>
+<p><img src="recent_conditions.png" width="500">  </p>
+
+<p></div></p>
+
+<p>For the course project, I developed a shiny application that illustrates changes in reservoir water levels through time. The app loads datasets for individual reservoirs and calculates summary statistics for a selected year, and plots the highlighted year along with the historical record. </p>
+
+<p><sub><sub>         Image credit:  Texas Water Development Board, waterdatafortexas.org </sub></sub></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -92,14 +88,45 @@ placeholder
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
+    <h2>Reservoir Stats</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r"># Example calculations for summary statistics during selected year.
+mean(reservoir_selected_year$percent_full)  
+</code></pre>
+
+<pre><code>## [1] 54.33361
+</code></pre>
+
+<pre><code class="r">min(reservoir_selected_year$percent_full)
+</code></pre>
+
+<pre><code>## [1] 34.5
+</code></pre>
+
+<pre><code class="r">max(reservoir_selected_year$percent_full)
+</code></pre>
+
+<pre><code>## [1] 79.3
+</code></pre>
+
+<pre><code class="r"># Note: calculations valid when storage capacity is constant throughout selected year [generally true]
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
     <h2>Acknowlegements</h2>
   </hgroup>
   <article data-timings="">
     <h3> Thank you </h3>
  
 
-<p><li> Texas Water Development Board (TWDB) for providing publically available data sets on waterdatafortexas.org  </li>
- <li>  Staff and students of this class on coursera.org for informative lectures and helpful discussion forums </li>
+<p><li> Texas Water Development Board (TWDB) for providing data sets on waterdatafortexas.org  </li>
+ <li>  Staff and students for informative lectures and helpful discussion forums </li>
  <li>  R community on stackoverflow.com </li></p>
 
   </article>
@@ -118,13 +145,13 @@ placeholder
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Embedded R code'>
+        data-slide=2 title='Shiny app screenshot'>
          2
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Shiny app screenshot'>
+        data-slide=3 title='Reservoir Stats'>
          3
       </a>
     </li>
