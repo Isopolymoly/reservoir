@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Texas Reservoirs</title>
+  <title>Reservoirs</title>
   <meta charset="utf-8">
-  <meta name="description" content="Texas Reservoirs">
+  <meta name="description" content="Reservoirs">
   <meta name="author" content="Developing Data Products course project">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -32,7 +32,7 @@
     <!-- LOGO SLIDE -->
         <slide class="title-slide segue nobackground">
   <hgroup class="auto-fadein">
-    <h1>Texas Reservoirs</h1>
+    <h1>Reservoirs</h1>
     <h2></h2>
     <p>Developing Data Products course project<br/>January 2015</p>
   </hgroup>
@@ -44,7 +44,26 @@
     <slide class="" id="slide-1" style="background:;">
   <article data-timings="">
     <style>
-.title-slide {background-color: #88F}
+.title-slide {background-color: #0f5feF}
+
+.title-slide hgroup h1 {
+  font-size: 65px;
+  line-height: 1.4;
+  letter-spacing: -3px;
+  color: #FFFFFF;
+}
+
+
+
+.title-slide hgroup h2 {
+  font-size: 34px;
+  color: #FFFFFFF;
+  font-weight: inherit;
+}
+
+
+
+
 </style>
 
 <h2>Everything&#39;s bigger in Texas</h2>
@@ -59,17 +78,17 @@
 
 <p>The state of Texas (USA) spans a large geographical area, with severe drought in western regions coinciding with a rainy season in the east.</p>
 
-<p><br> <br> </p>
+<p><br> </p>
 
-<p>This figure shows the recent status of water reservoirs statewide as a percentage of filled capacity.</p>
+<p>This figure shows the recent status of water reservoirs statewide as a percentage of filled capacity. 
+<br> [Image credit:  Texas Water Development Board, waterdatafortexas.org]</p>
 
 <p><img src="recent_conditions.png" width="500">  </p>
 
 <p></div></p>
 
-<p>For the course project, I developed a shiny application that illustrates changes in reservoir water levels through time. The app loads datasets for individual reservoirs and calculates summary statistics for a selected year, and plots the highlighted year along with the historical record. </p>
-
-<p><sub><sub>         Image credit:  Texas Water Development Board, waterdatafortexas.org </sub></sub></p>
+<p>For the course project, I developed a shiny application that illustrates changes in reservoir water levels through time. The app loads datasets for individual reservoirs  and calculates summary statistics for a selected year, and plots the highlighted year along with the historical record. 
+<br></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -122,12 +141,9 @@ mean(reservoir_selected_year$percent_full)
     <h2>Acknowlegements</h2>
   </hgroup>
   <article data-timings="">
-    <h3> Thank you </h3>
- 
-
-<p><li> Texas Water Development Board (TWDB) for providing data sets on waterdatafortexas.org  </li>
- <li>  Staff and students for informative lectures and helpful discussion forums </li>
- <li>  R community on stackoverflow.com </li></p>
+    <p><li> Texas Water Development Board (TWDB), waterdatafortexas.org  </li>
+ <li> Developing Data Products discussion forums </li>
+ <li> stackoverflow.com </li></p>
 
   </article>
   <!-- Presenter Notes -->

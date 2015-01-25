@@ -1,5 +1,5 @@
 ---
-title       : Texas Reservoirs
+title       : Reservoirs
 subtitle    : 
 author      : Developing Data Products course project
 job         : January 2015
@@ -11,7 +11,26 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 <style>
-.title-slide {background-color: #88F}
+.title-slide {background-color: #0f5feF}
+
+.title-slide hgroup h1 {
+  font-size: 65px;
+  line-height: 1.4;
+  letter-spacing: -3px;
+  color: #FFFFFF;
+}
+
+
+
+.title-slide hgroup h2 {
+  font-size: 34px;
+  color: #FFFFFFF;
+  font-weight: inherit;
+}
+
+
+
+
 </style>
 
 
@@ -27,11 +46,11 @@ knit        : slidify::knit2slides
   
  The state of Texas (USA) spans a large geographical area, with severe drought in western regions coinciding with a rainy season in the east.
 
-<br> <br> 
+<br> 
 
-This figure shows the recent status of water reservoirs statewide as a percentage of filled capacity.
- 
- 
+This figure shows the recent status of water reservoirs statewide as a percentage of filled capacity. 
+<br> [Image credit:  Texas Water Development Board, waterdatafortexas.org]
+
  
  <img src="recent_conditions.png" width="500">  
  
@@ -39,10 +58,10 @@ This figure shows the recent status of water reservoirs statewide as a percentag
 </div>
 
 
-For the course project, I developed a shiny application that illustrates changes in reservoir water levels through time. The app loads datasets for individual reservoirs and calculates summary statistics for a selected year, and plots the highlighted year along with the historical record. 
-
- <sub><sub>         Image credit:  Texas Water Development Board, waterdatafortexas.org </sub></sub>
-
+For the course project, I developed a shiny application that illustrates changes in reservoir water levels through time. The app loads datasets for individual reservoirs  and calculates summary statistics for a selected year, and plots the highlighted year along with the historical record. 
+<br>
+ 
+ 
 
 
 ---  .class #id
@@ -102,11 +121,9 @@ max(reservoir_selected_year$percent_full)
 
 ## Acknowlegements
  
-<h3> Thank you </h3>
- 
- <li> Texas Water Development Board (TWDB) for providing data sets on waterdatafortexas.org  </li>
- <li>  Staff and students for informative lectures and helpful discussion forums </li>
- <li>  R community on stackoverflow.com </li>
+ <li> Texas Water Development Board (TWDB), waterdatafortexas.org  </li>
+ <li> Developing Data Products discussion forums </li>
+ <li> stackoverflow.com </li>
  
  
  
